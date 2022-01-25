@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kanpur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>-->
+<style>
+     input[type=text],input[type=gmail],input[type=number],input[type=date],input[type=file]
+  {
+    
+      width: 250;
+      height: 40;
+  }
+  .card
+{
+  box-shadow: 0px 0px 20px 0px black;
+}
+
+  .logo 
+  {
+height: 110p;
+width: 70px;
+  }
+  .a
+  {
+    font-size: 100px;
+    background-color: mediumseagreen;
+  }
+  body
+  {
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  .a-image
+  {
+    margin-top: 10px;
+  background-image: url("images/img24.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  .a-text
+  {
+   
+    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  }
+  .aa
+  {
+    width:800px;
+    height:500px;
+    float: left; 
+   margin: right 9px;
+     padding: 70px;
+
+  }
+  .aaa
+  {
+    width:1200px;
+    height: 650px;
+    float: center; 
+   margin: right 9px;
+     padding: 10px;
+     margin-bottom: 30px;
+   
+  }
+  .img:hover
+  {
+    opacity: 0.3;
+  }
+  
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><img class="logo" src="images/img23.jpg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="a.html">Home</a>
+          </li>
+         <!---- <li class="nav-item">
+            <a class="nav-link " href="#">Link</a>
+          </li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="javascript form validation.html">Enquiry</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link " href="contactus.html">Contact Us</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card">
+  <form name="myForm" method="POST" onsubmit="return validateForm()">
+    <b>
+        <h1 style="text-align: center; background-color: brown;   margin-top: 10px;   margin-bottom: 10px;">TOURIST ENQUIRY FORM
+    </b></h1>
+    <center>
+        <table border="7" width="60%" cellspacing="4" cellpadding="10">
+    </center>
+    <tr>
+        <td><label>NAME</label></td>
+        <td><input type="text" name="name" pattern="[a-z]{1-15}"
+                title="Username should only contain lowercase letters. e.g. John"
+                placeholder="please enter your name" />
+        </td>
+    </tr>
+    <tr>
+        <td><label>G-MAIL</label></td>
+        <td><input type="gmail" name="gmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="characters@characters.domain" placeholder="enter here ex.example@example.com" /></td>
+    </tr>
+    <tr>
+        <td><label> AGE</label></td>
+        <td><input type="text" name="age" placeholder="enter your age" /></td>
+    </tr>
+    <tr>
+        <td>CONTACT NO:</td>
+        <td><input type="number" name="number" pattern="[1-9]{1}[0-9]{9}" required
+                title="contact no must be 10 digit long" placeholder="enter your contact no" /></td>
+    </tr>
+    <tr>
+        <td><label>GENDER</label></td>
+        <td><input type="radio" name="gen" />Male
+          &nbsp;&nbsp;&nbsp;<input type="radio" name="gen" />Female</td>
+    </tr>
+    <tr>
+
+        <td><label>ADDRESSS</label></td>
+        <td><textarea rows="10" cols="20"></textarea></td>
+    </tr>
+    <tr>
+        <td><label>DISTRICT PINCODE</label></td>
+        <td><input type="text" name="pin" /></td>
+    </tr>
+    <tr>
+        <td><label> Numbers Of Travelers?Adults?Children</label></td>
+        <td><input type="number" name="travelers" /></td>
+    </tr>
+    <tr>
+        <td><label>Where Did You Like TO Travel?</label></td>
+        <td><input type="text" name="travel place" /></td>
+    </tr>
+    <tr>
+        <td><label>What is your City Of departure</label></td>
+        <td><input type="text" name="city" /></td>
+    </tr>
+    <tr>
+        <td><label>Starting date</label></td>
+        <td><input type="date" name="start date" /></td>
+    </tr>
+    <tr>
+        <td><label>Return Date</label></td>
+        <td><input type="date" name="return date" /></td>
+    </tr>
+    <tr>
+        <td><label>UPLOAD YOUR MARKSHEET</label></td>
+        <td><input type="file"></td>
+    </tr>
+   <!---- <tr>
+     
+       <td><input type="submit" ></td>
+    </tr>-->
+    <tr>
+   <td><div class="col-12">
+      <button class="btn btn-primary" style="margin-top: 10px; margin-bottom: 10px; align-content: center;" type="submit">Submit form</button></td>
+    </div>
+    </tr>
+    </table>
+</form>
+</div>
+
+
+<script type="text/javaScript">
+    function validateForm()
+    {
+        var x=document.forms["myForm"]["name"].value;
+        if(x=="")
+        {
+        alert("Please Enter your Name ");
+        return false;
+        }
+        var x=document.forms["myForm"]["gmail"].value;
+        if(x=="")
+        {
+            alert("Please Enter Your Gmail");
+            return false;
+        }
+        var x=document.forms["myForm"]["age"].value;
+        if(x=="")
+        {
+            alert("Please enter your age");
+            return false;
+        }
+        var x=document.forms["myForm"]["number"].value;
+        if(x=="")
+        {
+            alert("please enter your contact no");
+            return false;
+        }
+
+    }
+ 
+
+    </script>
